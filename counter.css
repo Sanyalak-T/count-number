@@ -1,0 +1,51 @@
+/** @format */
+
+body {
+  background-color: #a4a2a4;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#showNumbers {
+  display: block;
+  text-align: center;
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#buttonDiv button:first-child {
+  color: #fff;
+  background-color: green;
+  border: none;
+}
+
+#buttonDiv button:last-child {
+  color: #fff;
+  background-color: red;
+  border: none;
+}
+
+button {
+  padding: 1.5rem;
+  margin: 0 1rem;
+}
+
+#labelShowNumber {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#showNumber {
+  height: 2rem;
+  width: 50%;
+  background-color: #a561a5;
+  color: #fff;
+  margin: auto;
+  padding-top: 1rem;
+}

@@ -1,0 +1,56 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="counter.css" />
+    <title>Counter-Button</title>
+  </head>
+  <body>
+    <h2>Counter-Button</h2>
+
+    <div id="showNumbers">
+      <p id="labelShowNumber">Show Number</p>
+      <p id="showNumber">0</p>
+    </div>
+    <br />
+    <div id="buttonDiv">
+      <button type="button" onclick="increaseNumber()">Increase</button>
+      <button type="button" onclick="resetNumber()">Reset</button>
+      <button type="button" onclick="decreaseNumber()">Decrease</button>
+    </div>
+
+    <script>
+      let count = 0;
+      let countZero = 0;
+
+      function increaseNumber() {
+        numberIncrease = count++;
+        let showNumberElement = document.getElementById('showNumber');
+        showNumberElement.style.color = 'green';
+        showNumberElement.style.backgroundColor = '#fff';
+        showNumberElement.innerHTML = numberIncrease + 1;
+      }
+
+      function decreaseNumber() {
+        let numberDecrease = count--;
+        let showNumberElement = document.getElementById('showNumber');
+        showNumberElement.style.color = 'red';
+        showNumberElement.style.backgroundColor = '#fff';
+        showNumberElement.innerHTML = numberDecrease - 1;
+      }
+
+      function resetNumber() {
+        let showNumberElement = document.getElementById('showNumber');
+        showNumberElement.style.color = 'black';
+        showNumberElement.style.backgroundColor = '#a561a5';
+        count = 0;
+        showNumberElement.innerHTML = count;
+        console.log(count);
+      }
+    </script>
+  </body>
+</html>
